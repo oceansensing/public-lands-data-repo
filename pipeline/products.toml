@@ -1,0 +1,54 @@
+# What this repository publishes: the United States' public and protected lands — USGS's
+# Protected Areas Database (PAD-US 4.1), its fee and easement lands, who manages each and whether
+# the public may enter — and the Forest Service's roads and trails (its Motor Vehicle Use Map's
+# roads and trails, and every National Forest System trail), each as a pyramid of vector tiles,
+# `map/land/<product>/index.json` beside `map/land/<product>/<version>/<z>/<x>/<y>.pbf`, and a
+# root naming its version. The fetchers are the site's `scripts/fetch-padus.py` and
+# `scripts/fetch-usfs-routes.py` (on `scripts/land_tiles.py`), whose docstrings carry the
+# measurements.
+#
+# **To the second host alone** (`r2_only`, the site pipeline's D13, its note of 2026-10-09): every
+# file of these products is published to Cloudflare R2 and not to Pages, which carries the status
+# alone. The roots stay on the `published` branch; **the tiles are each product's `trees`**,
+# carried from run to run by this repository's cache, never committed.
+#
+# **Rebuilt only when a source changes**: PAD-US's when its service's identity moves (about
+# yearly), across the publish workflow's job matrix of state groups; the routes' when one of
+# their three files moves, looked at every 30 days (`every_hours`). Neither has a budget: an old
+# `refTime` is the source's own date, not a fault.
+
+[contract]
+check = ["node", "scripts/test-schema.mjs"]
+roots = ["node", "scripts/test-schema.mjs", "--roots"]
+
+[defaults]
+timeout_minutes = 20
+
+[steps.padus]
+cmd = ["python3", "scripts/fetch-padus.py", "--only=padus"]
+lane = "services.arcgis.com"
+timeout_minutes = 90
+
+[steps.usfs-routes]
+cmd = ["python3", "scripts/fetch-usfs-routes.py", "--only=usfs-routes"]
+lane = "data.fs.usda.gov"
+timeout_minutes = 60
+every_hours = 720
+
+[products.padus]
+title = "Public lands: PAD-US 4.1's fee and easement lands, who manages each and whether the public may enter (USGS Gap Analysis Project)"
+step = "padus"
+roots = ["padus.json"]
+writes = ["padus.json"]
+trees = ["land/padus"]
+namespace = ["python3", "scripts/fetch-padus.py", "--namespace", "--only=padus"]
+r2_only = true
+
+[products.usfs-routes]
+title = "Forest roads and trails: the Motor Vehicle Use Map's roads and trails and every National Forest System trail (USDA Forest Service)"
+step = "usfs-routes"
+roots = ["usfs-routes.json"]
+writes = ["usfs-routes.json"]
+trees = ["land/usfs-routes"]
+namespace = ["python3", "scripts/fetch-usfs-routes.py", "--namespace", "--only=usfs-routes"]
+r2_only = true
