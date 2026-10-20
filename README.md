@@ -3,7 +3,7 @@
 The United States' **public lands** and the Forest Service's **roads and trails**, as vector tiles: a data repository of the oceansensing ocean map system, with its own
 Pages site, its own schedule and its own gigabyte, and no code of its own.
 
-**Nothing is published yet.** `PLAN.md` is the founding plan; `CLAUDE.md` carries what must not be
+**Publishing since 2026-10-20**, daily at 07:41 UTC, PAD-US rebuilt only when USGS's service changes and the routes each month. `PLAN.md` is the founding plan; `CLAUDE.md` carries what must not be
 got wrong and the shared doc doctrine.
 
 ## What it publishes

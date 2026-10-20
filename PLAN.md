@@ -11,8 +11,11 @@ Two products, each a pyramid of Mapbox vector tiles (uncompressed, extent 4096, 
 
 **PAD-US 4.1**, USGS Gap Analysis Project, Protected Areas Database of the United States, published 2025-03-31: public domain, read from USGS's own web service of it (the *PAD-US Manager Name* feature layer view on USGS's ArcGIS Online, which USGS's *PAD-US Web Services* page offers to developers), since the ScienceBase downloads are served only behind a reCAPTCHA. Its caveats travel with it: not a legal boundary; public access assigned largely by designation type; not every area reviewed locally; and, by its use constraints, not to be combined with finer data into hybrid maps — so it is published as USGS publishes it. Citation: U.S. Geological Survey (USGS) Gap Analysis Project (GAP), 2024, Protected Areas Database of the United States (PAD-US) 4.1: U.S. Geological Survey data release, https://doi.org/10.5066/P96WBCHS. **The Forest Service's roads and trails**, its Geodata Clearinghouse (data.fs.usda.gov/geodata/edw/), refreshed weekly: no access constraint; not legal documents, not to determine title, ownership, boundaries, jurisdiction or restrictions; altered downloads shared are to be named as such. Not every National Forest publishes Motor Vehicle Use Map data, and an open date is when a vehicle is legal, not when a road is passable. Terms read 2026-10-20.
 
+## 2026-10-20: the first run, and the schedule
+
+The first dispatched run (`39397801521`, 09:02-10:37 UTC) was green: PAD-US 4.1's 21 state groups tiled four at a time and joined, its zooms 4 to 8 dissolved by class, and the Forest Service's roads and trails from zoom 8 - `land/padus/` and `land/usfs-routes/` on R2 alone, the upload 45 minutes. The schedule set then: daily at 07:41 UTC, PAD-US rebuilt only when USGS's service changes and the routes each month.
+
 ## Open
 
-1. The first dispatched run, read: PAD-US's matrix and join, the routes' build, both products fresh, R2 alone — and its R2 job's time for the first upload of every tile.
-2. Then the daily schedule.
-3. A month of runs read: the cache kept warm by the daily restore, the routes rebuilt when their files move.
+1. Then the daily schedule.
+2. A month of runs read: the cache kept warm by the daily restore, the routes rebuilt when their files move.
