@@ -1,0 +1,58 @@
+{
+ "schema": 2,
+ "contract": 1,
+ "generated": "2026-10-24T07:47:28Z",
+ "mode": "full",
+ "run": {
+  "id": "40075376953",
+  "url": "https://github.com/oceansensing/public-lands-data-repo/actions/runs/40075376953"
+ },
+ "schedule": {
+  "crons": [
+   "41 7 * * *"
+  ],
+  "longestGapHours": 24.0
+ },
+ "products": {
+  "padus": {
+   "title": "Public lands: PAD-US 4.1's fee and easement lands, who manages each and whether the public may enter (USGS Gap Analysis Project)",
+   "roots": [
+    "padus.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-24T07:47:28Z",
+   "updated": "2026-10-20T09:43:38Z",
+   "hour": "2025-06-04T16:31:54Z",
+   "modelRun": null,
+   "source": "USGS Gap Analysis Project, Protected Areas Database of the United States (PAD-US) 4.1, published 2025-03-31: Fee and Easement features, from USGS's PAD-US web service",
+   "hours": [
+    "2025-06-04T16:31:54Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 12159.26,
+   "nearestOffsetHours": 12159.26
+  },
+  "usfs-routes": {
+   "title": "Forest roads and trails: the Motor Vehicle Use Map's roads and trails and every National Forest System trail (USDA Forest Service)",
+   "roots": [
+    "usfs-routes.json"
+   ],
+   "fate": "carried",
+   "reason": "not due: checked 94.1 h ago, runs every 720 h",
+   "checked": "2026-10-20T09:43:38Z",
+   "updated": "2026-10-20T09:43:38Z",
+   "hour": "2026-10-19T06:51:20Z",
+   "modelRun": null,
+   "source": "USDA Forest Service, Geodata Clearinghouse: Motor Vehicle Use Map roads and trails, and National Forest System trails",
+   "hours": [
+    "2026-10-19T06:51:20Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 120.94,
+   "nearestOffsetHours": 120.94
+  }
+ }
+}

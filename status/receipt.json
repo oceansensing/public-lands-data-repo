@@ -1,0 +1,18 @@
+{
+ "schema": 1,
+ "generated": "2026-10-24T07:47:28Z",
+ "mode": "full",
+ "fates": {
+  "padus": "fresh",
+  "usfs-routes": "carried"
+ },
+ "reasons": {
+  "usfs-routes": "not due: checked 94.1 h ago, runs every 720 h"
+ },
+ "built": {},
+ "withheld": {},
+ "deploy": true,
+ "notes": [],
+ "behind": [],
+ "tile_keys": {}
+}
