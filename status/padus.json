@@ -1,0 +1,24 @@
+{
+ "schema": 1,
+ "product": "padus",
+ "title": "Public lands: PAD-US 4.1's fee and easement lands, who manages each and whether the public may enter (USGS Gap Analysis Project)",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-31T07:43:27Z",
+ "updated": "2026-10-20T09:43:38Z",
+ "hour": "2025-06-04T16:31:54Z",
+ "modelRun": null,
+ "source": "USGS Gap Analysis Project, Protected Areas Database of the United States (PAD-US) 4.1, published 2025-03-31: Fee and Easement features, from USGS's PAD-US web service",
+ "hours": [
+  "2025-06-04T16:31:54Z"
+ ],
+ "files": {
+  "padus.json": {
+   "bytes": 10732,
+   "sha256": "8c6f627c87d9853ec610e60b3068a2b2e556f712fb390c9cbb045110eb0ae5d2"
+  }
+ },
+ "trees": {
+  "land/padus": "ac91f7b3ffb3"
+ }
+}
