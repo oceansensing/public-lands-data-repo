@@ -1,0 +1,525 @@
+{
+ "product": "padus",
+ "header": {
+  "refTime": "2025-06-04T16:31:54Z",
+  "source": "USGS Gap Analysis Project, Protected Areas Database of the United States (PAD-US) 4.1, published 2025-03-31: Fee and Easement features, from USGS's PAD-US web service"
+ },
+ "index": "land/padus/index.json",
+ "version": "ac91f7b3ffb3",
+ "generated": "2026-10-20T09:38:01Z",
+ "citation": "U.S. Geological Survey (USGS) Gap Analysis Project (GAP), 2024, Protected Areas Database of the United States (PAD-US) 4.1: U.S. Geological Survey data release, https://doi.org/10.5066/P96WBCHS",
+ "sourceKey": {
+  "layer": "PADUS4_1ManagerName",
+  "dataLastEditDate": 1749054714121,
+  "counts": {
+   "AK": 1016,
+   "AL": 2448,
+   "AR": 1973,
+   "AS": 2,
+   "AZ": 2454,
+   "CA": 32168,
+   "CO": 17065,
+   "CT": 19074,
+   "DC": 345,
+   "DE": 6758,
+   "FL": 10138,
+   "GA": 7286,
+   "GU": 11,
+   "HI": 939,
+   "IA": 6755,
+   "ID": 9849,
+   "IL": 14264,
+   "IN": 4691,
+   "KS": 2111,
+   "KY": 3645,
+   "LA": 2848,
+   "MA": 48754,
+   "MD": 61323,
+   "ME": 12839,
+   "MI": 13714,
+   "MN": 16916,
+   "MO": 5607,
+   "MS": 1847,
+   "MT": 4785,
+   "NC": 14417,
+   "ND": 8251,
+   "NE": 2845,
+   "NH": 16945,
+   "NJ": 30936,
+   "NM": 1549,
+   "NV": 1995,
+   "NY": 20092,
+   "OH": 10039,
+   "OK": 1986,
+   "OR": 6680,
+   "PA": 59808,
+   "PR": 596,
+   "RI": 5644,
+   "SC": 4004,
+   "SD": 9352,
+   "TN": 3517,
+   "TX": 24704,
+   "UM": 4,
+   "UNKF": 29,
+   "UT": 6928,
+   "VA": 20928,
+   "VI": 66,
+   "VT": 19962,
+   "WA": 10869,
+   "WI": 21506,
+   "WV": 2544,
+   "WY": 20589
+  },
+  "domains": {
+   "Des_Tp": {
+    "ACC": "Access Area",
+    "ACEC": "Area of Critical Environmental Concern",
+    "AGRE": "Agricultural Easement",
+    "CONE": "Conservation Easement",
+    "FACY": "Facility",
+    "FORE": "Forest Stewardship Easement",
+    "FOTH": "Federal Other or Unknown",
+    "HCA": "Historic or Cultural Area",
+    "HCAE": "Historic or Cultural Easement",
+    "IRA": "Inventoried Roadless Area",
+    "LCA": "Local Conservation Area",
+    "LHCA": "Local Historic or Cultural Area",
+    "LOTH": "Local Other or Unknown",
+    "LP": "Local Park",
+    "LREC": "Local Recreation Area",
+    "LRMA": "Local Resource Management Area",
+    "MIL": "Military Land",
+    "MIT": "Mitigation Land or Bank",
+    "MPA": "Marine Protected Area",
+    "NCA": "Conservation Area",
+    "ND": "Not Designated",
+    "NF": "National Forest",
+    "NG": "National Grassland",
+    "NLS": "National Lakeshore or Seashore",
+    "NM": "National Monument",
+    "NP": "National Park",
+    "NRA": "National Recreation Area",
+    "NSBV": "National Scenic, Botanical or Volcanic Area",
+    "NT": "National Scenic or Historic Trail",
+    "NWR": "National Wildlife Refuge",
+    "OCS": "Outer Continental Shelf Area",
+    "OTHE": "Other Easement",
+    "PAGR": "Private Agricultural",
+    "PCON": "Private Conservation",
+    "PFOR": "Private Forest Stewardship",
+    "PHCA": "Private Historic or Cultural",
+    "POTH": "Private Other or Unknown",
+    "PPRK": "Private Park",
+    "PRAN": "Private Ranch",
+    "PREC": "Private Recreation or Education",
+    "PROC": "Approved or Proclamation Boundary",
+    "PUB": "National Public Lands",
+    "RANE": "Ranch Easement",
+    "REA": "Research or Educational Area",
+    "REC": "Recreation Management Area",
+    "RECE": "Recreation or Education Easement",
+    "RMA": "Resource Management Area",
+    "RNA": "Research Natural Area",
+    "SCA": "State Conservation Area",
+    "SDA": "Special Designation Area",
+    "SHCA": "State Historic or Cultural Area",
+    "SOTH": "State Other or Unknown",
+    "SP": "State Park",
+    "SREC": "State Recreation Area",
+    "SRMA": "State Resource Management Area",
+    "SW": "State Wilderness",
+    "TRIBL": "Native American Land Area",
+    "UNK": "Unknown",
+    "UNKE": "Unknown Easement",
+    "WA": "Wilderness Area",
+    "WPA": "Watershed Protection Area",
+    "WSA": "Wilderness Study Area",
+    "WSR": "Wild and Scenic River"
+   },
+   "GAP_Sts": {
+    "1": "1 - managed for biodiversity - disturbance events proceed or are mimicked",
+    "2": "2 - managed for biodiversity - disturbance events suppressed",
+    "3": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+    "4": "4 - no known mandate for biodiversity protection"
+   },
+   "Mang_Name": {
+    "ARS": "Agricultural Research Service",
+    "AS": "American Samoa Government",
+    "BIA": "Bureau of Indian Affairs",
+    "BLM": "Bureau of Land Management",
+    "BOEM": "Bureau of Ocean Energy Management",
+    "BPA": "Bonneville Power Administration",
+    "CITY": "City Land",
+    "CNTY": "County Land",
+    "DESG": "Designation",
+    "DOD": "Department of Defense",
+    "DOE": "Department of Energy",
+    "FM": "Federated States of Micronesia Government",
+    "FWS": "U.S. Fish and Wildlife Service",
+    "GU": "Guam Government",
+    "JNT": "Joint",
+    "MH": "Marshall Islands Government",
+    "MP": "Mariana Islands Government",
+    "NGO": "Non-Governmental Organization",
+    "NOAA": "National Oceanic and Atmospheric Administration",
+    "NPS": "National Park Service",
+    "NRCS": "Natural Resources Conservation Service",
+    "OTHF": "Other or Unknown Federal Land",
+    "OTHR": "Other",
+    "OTHS": "Other or Unknown State Land",
+    "PR": "Puerto Rico Government",
+    "PVT": "Private",
+    "PW": "Palau Government",
+    "REG": "Regional Agency Land",
+    "RWD": "Regional Water Districts",
+    "SDC": "State Department of Conservation",
+    "SDNR": "State Department of Natural Resources",
+    "SDOL": "State Department of Land",
+    "SFW": "State Fish and Wildlife",
+    "SLB": "State Land Board",
+    "SPR": "State Park and Recreation",
+    "TRIB": "American Indian Lands",
+    "TVA": "Tennessee Valley Authority",
+    "UM": "U.S. Minor Outlying Islands Government",
+    "UNK": "Unknown",
+    "UNKL": "Other or Unknown Local Government",
+    "USACE": "Army Corps of Engineers",
+    "USBR": "Bureau of Reclamation",
+    "USFS": "Forest Service",
+    "VI": "U.S. Virgin Islands Government"
+   },
+   "Mang_Type": {
+    "DESG": "Designation",
+    "DIST": "Regional Agency Special District",
+    "FED": "Federal",
+    "JNT": "Joint",
+    "LOC": "Local Government",
+    "NGO": "Non-Governmental Organization",
+    "PVT": "Private",
+    "STAT": "State",
+    "TERR": "Territorial",
+    "TRIB": "American Indian Lands",
+    "UNK": "Unknown"
+   },
+   "Pub_Access": {
+    "OA": "Open Access",
+    "RA": "Restricted Access",
+    "UK": "Unknown",
+    "XA": "Closed"
+   }
+  }
+ },
+ "features": {
+  "total": 638070,
+  "byState": {
+   "AK": 1016,
+   "CA": 32168,
+   "MD": 61323,
+   "DE": 6758,
+   "DC": 345,
+   "PA": 59808,
+   "MA": 48754,
+   "RI": 5644,
+   "NJ": 30936,
+   "CT": 19074,
+   "NY": 20092,
+   "VT": 19962,
+   "NH": 16945,
+   "ME": 12839,
+   "TX": 24704,
+   "OK": 1986,
+   "NM": 1549,
+   "AZ": 2454,
+   "NV": 1995,
+   "CO": 17065,
+   "WY": 20589,
+   "UT": 6928,
+   "ID": 9849,
+   "MT": 4785,
+   "WA": 10869,
+   "OR": 6680,
+   "WI": 21506,
+   "MN": 16916,
+   "MI": 13714,
+   "IA": 6755,
+   "IL": 14264,
+   "IN": 4691,
+   "OH": 10039,
+   "KY": 3645,
+   "WV": 2544,
+   "MO": 5607,
+   "VA": 20928,
+   "NC": 14417,
+   "SC": 4004,
+   "GA": 7286,
+   "FL": 10138,
+   "TN": 3517,
+   "AL": 2448,
+   "MS": 1847,
+   "LA": 2848,
+   "AR": 1973,
+   "ND": 8251,
+   "SD": 9352,
+   "NE": 2845,
+   "KS": 2111,
+   "HI": 939,
+   "PR": 596,
+   "VI": 66,
+   "GU": 11,
+   "AS": 2,
+   "UM": 4,
+   "UNKF": 29
+  }
+ },
+ "tiles": {
+  "count": 320161,
+  "bytes": 669034858,
+  "byZoom": {
+   "4": 27,
+   "5": 61,
+   "6": 146,
+   "7": 424,
+   "8": 1383,
+   "9": 4808,
+   "10": 17475,
+   "11": 64135,
+   "12": 231702
+  },
+  "largest": {
+   "bytes": 1433384,
+   "tile": "9/146/195"
+  }
+ },
+ "groups": {
+  "ak": {
+   "states": [
+    "AK"
+   ],
+   "seconds": {
+    "fetch": 393,
+    "build": 420,
+    "total": 895
+   },
+   "peakMB": 3675.2,
+   "tiles": 110293
+  },
+  "ca": {
+   "states": [
+    "CA"
+   ],
+   "seconds": {
+    "fetch": 144,
+    "build": 182,
+    "total": 328
+   },
+   "peakMB": 852.3,
+   "tiles": 9070
+  },
+  "md": {
+   "states": [
+    "MD",
+    "DE",
+    "DC"
+   ],
+   "seconds": {
+    "fetch": 151,
+    "build": 188,
+    "total": 341
+   },
+   "peakMB": 748.8,
+   "tiles": 1015
+  },
+  "pa": {
+   "states": [
+    "PA"
+   ],
+   "seconds": {
+    "fetch": 36,
+    "build": 118,
+    "total": 156
+   },
+   "peakMB": 1165.0,
+   "tiles": 3001
+  },
+  "ma": {
+   "states": [
+    "MA",
+    "RI"
+   ],
+   "seconds": {
+    "fetch": 129,
+    "build": 139,
+    "total": 269
+   },
+   "peakMB": 677.3,
+   "tiles": 870
+  },
+  "nj": {
+   "states": [
+    "NJ",
+    "CT"
+   ],
+   "seconds": {
+    "fetch": 75,
+    "build": 140,
+    "total": 217
+   },
+   "peakMB": 829.9,
+   "tiles": 1047
+  },
+  "ny": {
+   "states": [
+    "NY",
+    "VT",
+    "NH",
+    "ME"
+   ],
+   "seconds": {
+    "fetch": 127,
+    "build": 296,
+    "total": 425
+   },
+   "peakMB": 1107.7,
+   "tiles": 7297
+  },
+  "tx": {
+   "states": [
+    "TX",
+    "OK",
+    "NM",
+    "AZ",
+    "NV"
+   ],
+   "seconds": {
+    "fetch": 97,
+    "build": 169,
+    "total": 268
+   },
+   "peakMB": 1442.1,
+   "tiles": 26278
+  },
+  "co": {
+   "states": [
+    "CO",
+    "WY",
+    "UT"
+   ],
+   "seconds": {
+    "fetch": 184,
+    "build": 249,
+    "total": 435
+   },
+   "peakMB": 612.7,
+   "tiles": 17807
+  },
+  "nw": {
+   "states": [
+    "ID",
+    "MT",
+    "WA",
+    "OR"
+   ],
+   "seconds": {
+    "fetch": 143,
+    "build": 312,
+    "total": 458
+   },
+   "peakMB": 1137.8,
+   "tiles": 28915
+  },
+  "lakes": {
+   "states": [
+    "WI",
+    "MN",
+    "MI",
+    "IA"
+   ],
+   "seconds": {
+    "fetch": 81,
+    "build": 182,
+    "total": 264
+   },
+   "peakMB": 626.5,
+   "tiles": 17381
+  },
+  "ohio": {
+   "states": [
+    "IL",
+    "IN",
+    "OH",
+    "KY",
+    "WV",
+    "MO"
+   ],
+   "seconds": {
+    "fetch": 161,
+    "build": 129,
+    "total": 291
+   },
+   "peakMB": 584.5,
+   "tiles": 12879
+  },
+  "south": {
+   "states": [
+    "VA",
+    "NC",
+    "SC",
+    "GA",
+    "FL",
+    "TN",
+    "AL",
+    "MS",
+    "LA",
+    "AR"
+   ],
+   "seconds": {
+    "fetch": 249,
+    "build": 486,
+    "total": 742
+   },
+   "peakMB": 2206.3,
+   "tiles": 22255
+  },
+  "plains": {
+   "states": [
+    "ND",
+    "SD",
+    "NE",
+    "KS"
+   ],
+   "seconds": {
+    "fetch": 24,
+    "build": 122,
+    "total": 146
+   },
+   "peakMB": 422.4,
+   "tiles": 13467
+  },
+  "islands": {
+   "states": [
+    "HI",
+    "PR",
+    "VI",
+    "GU",
+    "AS",
+    "UM",
+    "UNKF"
+   ],
+   "seconds": {
+    "fetch": 8,
+    "build": 40,
+    "total": 49
+   },
+   "peakMB": 180.8,
+   "tiles": 52503
+  }
+ },
+ "landmarks": {
+  "Denali National Park": 18861.2,
+  "Death Valley National Park": 13261.2,
+  "Grand Canyon National Park": 4776.3,
+  "Yellowstone National Park": 8109.6,
+  "Rocky Mountain National Park": 1075.5,
+  "Everglades National Park": 5783.6
+ }
+}
