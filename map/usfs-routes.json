@@ -1,0 +1,59 @@
+{
+ "product": "usfs-routes",
+ "header": {
+  "refTime": "2026-11-16T04:52:55Z",
+  "source": "USDA Forest Service, Geodata Clearinghouse: Motor Vehicle Use Map roads and trails, and National Forest System trails"
+ },
+ "index": "land/usfs-routes/index.json",
+ "version": "37649ee7987b",
+ "generated": "2026-11-20T07:48:11Z",
+ "sourceKey": {
+  "Trans_MVUM_Road": {
+   "etag": "\"7121085-6605d8caef7d9\"",
+   "lastModified": "Mon, 16 Nov 2026 04:52:48 GMT",
+   "size": 118624389
+  },
+  "Trans_MVUM_Trail": {
+   "etag": "\"1bb9d85-6605d8cb9cd47\"",
+   "lastModified": "Mon, 16 Nov 2026 04:52:49 GMT",
+   "size": 29072773
+  },
+  "Trans_Trail_NFS_Publish": {
+   "etag": "\"7245309-6605d8d173b2f\"",
+   "lastModified": "Mon, 16 Nov 2026 04:52:55 GMT",
+   "size": 119821065
+  }
+ },
+ "features": {
+  "total": 253667,
+  "drawn": {
+   "Trans_MVUM_Road": 150714,
+   "Trans_MVUM_Trail": 22067,
+   "Trans_Trail_NFS_Publish": 80886
+  },
+  "read": {
+   "Trans_MVUM_Road": 150787,
+   "Trans_MVUM_Trail": 50617,
+   "Trans_Trail_NFS_Publish": 86224
+  }
+ },
+ "tiles": {
+  "count": 94797,
+  "bytes": 268054092,
+  "byZoom": {
+   "8": 377,
+   "9": 947,
+   "10": 2483,
+   "11": 6912,
+   "12": 20695,
+   "13": 63383
+  },
+  "largest": {
+   "bytes": 470572,
+   "tile": "8/41/93"
+  }
+ },
+ "controls": {
+  "medianRoadLongitude": -112.53
+ }
+}

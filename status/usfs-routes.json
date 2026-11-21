@@ -1,0 +1,24 @@
+{
+ "schema": 1,
+ "product": "usfs-routes",
+ "title": "Forest roads and trails: the Motor Vehicle Use Map's roads and trails and every National Forest System trail (USDA Forest Service)",
+ "fate": "carried",
+ "reason": "not due: checked 23.9 h ago, runs every 720 h",
+ "checked": "2026-11-20T07:48:56Z",
+ "updated": "2026-11-20T07:48:56Z",
+ "hour": "2026-11-16T04:52:55Z",
+ "modelRun": null,
+ "source": "USDA Forest Service, Geodata Clearinghouse: Motor Vehicle Use Map roads and trails, and National Forest System trails",
+ "hours": [
+  "2026-11-16T04:52:55Z"
+ ],
+ "files": {
+  "usfs-routes.json": {
+   "bytes": 1311,
+   "sha256": "eaa92b4b9e13cd96b983b1f521c9861620257020d1d3ec5c8d5bb3a72496efaf"
+  }
+ },
+ "trees": {
+  "land/usfs-routes": "37649ee7987b"
+ }
+}
