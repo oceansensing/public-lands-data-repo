@@ -10,8 +10,11 @@ got wrong and the shared doc doctrine.
 
 Two products, each a pyramid of Mapbox vector tiles (uncompressed, extent 4096, Web Mercator, the XYZ scheme) with an index naming every tile to zoom 8 and a root naming its version, R2's alone: **`padus`** (`padus.json`, `map/land/padus/`), zooms 4 to 12, one polygon layer `lands` — PAD-US 4.1's Fee and Easement features with their public access code (open, restricted, closed, unknown), manager, manager type, designation and GAP status, each code beside PAD-US's own words for it, the unit's name, the category and the state; and **`usfs-routes`** (`usfs-routes.json`, `map/land/usfs-routes/`), zooms 8 to 13, two line layers: `roads`, the Motor Vehicle Use Map's roads with the vehicle classes each is open to and their dates, and `trails`, the Motor Vehicle Use Map's trails and every National Forest System trail, with the uses each is managed for or accepts. A set's version is its tiles' own hash, so an unchanged rebuild publishes nothing new.
 
-These products are published **operationally but not drawn on the website's map**; the map's status
-line still reports them when they fall behind, which is how their health stays visible.
+These products are published **operationally but not drawn on the
+website's map**. R2 alone carries them, so this repository's Pages status names none of
+them: the map's status line and the site's watchdog see only whether the
+origin publishes. Their fates are in the status on R2 and on the
+`published` branch.
 
 ## Where the data comes from
 
@@ -25,9 +28,9 @@ run time. This repository carries `pipeline/products.toml` and its publish
 workflow, and nothing else executable. Each run publishes to GitHub Pages and
 to Cloudflare R2 from one build. Related repositories: none it depends on.
 
-**Which document gets what, and what "update docs" means across all
-thirty-one repositories, is the doctrine block at the top of `CLAUDE.md`**: the
-same text in all thirty-one, held equal by the site's `check:docs`.
+**Which document gets what, and what "update docs" means across every
+repository of this project, is the doctrine block at the top of `CLAUDE.md`**: the
+same text in each, held equal by the site's `check:docs`.
 
 ## Structure
 

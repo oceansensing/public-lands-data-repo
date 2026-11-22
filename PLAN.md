@@ -1,7 +1,7 @@
 # public-lands-data-repo: the founding plan and running record
 
 The United States' **public lands** and the Forest Service's **roads and trails**, as vector tiles. Created on GitHub by the owner and given its documents by the site's
-`pipeline/scaffold/new-origin.py`. **Nothing is published yet.**
+`pipeline/scaffold/new-origin.py`. **Publishing since 2026-10-20**, its check daily.
 
 ## What it is for
 
@@ -17,5 +17,5 @@ The first dispatched run (`39397801521`, 09:02-10:37 UTC) was green: PAD-US 4.1'
 
 ## Open
 
-1. Then the daily schedule.
+1. ~~Then the daily schedule.~~ On since October 2026.
 2. A month of runs read: the cache kept warm by the daily restore, the routes rebuilt when their files move.
